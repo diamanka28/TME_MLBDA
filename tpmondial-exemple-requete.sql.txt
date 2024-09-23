@@ -1,0 +1,72 @@
+--NOM : 
+--Prenom : 
+
+
+-- les Pays
+;
+select *
+from Country
+order by name
+;
+
+
+-- les organisations
+;
+select name from Organization
+order by name
+;
+
+-- question 12
+; 
+select c.name, m.name, m.height
+from country c, mountain m , encompasses e, geo_mountain g
+where c.code  = g.country
+and g.mountain = m.name
+and c.code = e.country
+and e.continent = 'America'
+and not exists ( select m1.name
+                from mountain m1, geo_mountain g1
+                where m1.name = g1.mountain 
+                and g1.country = c.code
+                and m1.height > m.height)
+;
+-- question 13
+;
+select r.name
+from river r
+where r.river = 'Nile'
+and r.lake is null
+and r.sea is null
+;
+--question 14
+;
+
+select r.name
+from river r
+where r.river = 'Nile'
+and r.lake is null
+and r.sea is null
+union
+select e.name
+from river e
+where e.river = 'Nile'
+and e.sea is not null
+and e.lake is not null
+;
+-- question 15
+;
+
+-- question 16
+
+;
+select a.name, count(*) as nombre 
+from organization a , ismember m
+where m.organization = a.abbreviation
+group by m.organization
+order by nombre desc
+limit 3
+; 
+
+SELECT object_name, object_type, STATUS
+  FROM user_objects
+  ORDER BY object_type, object_name;

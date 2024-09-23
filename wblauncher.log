@@ -1,0 +1,8 @@
+2024-09-16 11:04:26 - === Starting 32bit SQL Workbench/J launcher ===
+2024-09-16 11:04:26 - Base directory: C:\Users\diama\Desktop\java
+2024-09-16 11:04:26 - Launcher config file: C:\Users\diama\Desktop\java\SQLWorkbench.cfg
+2024-09-16 11:04:26 - C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin\server\jvm.dll is a 64bit dll
+2024-09-16 11:04:26 - Using Java from PATH:C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot
+2024-09-16 11:04:26 - Using 10445MB memory
+2024-09-16 11:04:26 - ERROR: The 32bit launcher can't start an in-process JVM for a 64bit Java runtime
+2024-09-16 11:04:33 - Starting Java using: C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin\javaw.exe  -cp C:\Users\diama\Desktop\java\sqlworkbench.jar;C:\Users\diama\Desktop\java\ext\* workbench.WbStarter  -Dvisualvm.display.name=SQLWorkbench/J --add-opens=java.desktop/com.sun.java.swing.plaf.windows=ALL-UNNAMED -Xverify:none -Xmx10445m
